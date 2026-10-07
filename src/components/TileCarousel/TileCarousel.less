@@ -1,0 +1,76 @@
+.tile-carousel {
+    position: relative;
+    padding: 0 48px;
+
+    .tile-carousel__swiper {
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    .tile {
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid #8a8a8a;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .tile__img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+    }
+
+    .tile__body {
+        padding: 12px;
+    }
+
+    .text-h--card {
+        color: #001E44;
+        font-size: 1.3rem;
+    }
+
+    .link__item {
+        color: #2B3FA0;
+    }
+
+    .tile-carousel__arrow {
+        position: absolute;
+        top: calc(50% - 20px); // 20px = half of the dots' padding-bottom, so arrows centre on the cards
+        transform: translateY(-50%);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        color: #001E44;
+        cursor: pointer;
+
+        &--prev {
+            left: 4px;
+        }
+
+        &--next {
+            right: 4px;
+        }
+
+        &.swiper-button-disabled {
+            opacity: 0.4;
+            cursor: default;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #001E44;
+    }
+}

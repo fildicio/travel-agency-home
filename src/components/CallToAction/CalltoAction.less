@@ -1,0 +1,68 @@
+@import (reference) "../../styles/variables.less";
+
+
+.cta-content__container {
+    container: cta-container / inline-size;
+
+    padding: 20px;
+.cta__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #E9F0FB;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .cta__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #C7DAF5;
+        color: #123A6B;
+    }
+
+    .cta-content__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .body-button__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 @control-width;
+        min-width: 0;
+    }
+
+    .normal__button {
+        background-color: #001E44;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    @container cta-container (width < 600px) {
+        flex-direction: column;
+        align-items: stretch;
+
+        .body-button__wrapper {
+            flex: none;
+            align-self: center;
+            width: 100%;
+            max-width: @control-width;
+            text-align: center;
+        }
+    }
+}
+}
+

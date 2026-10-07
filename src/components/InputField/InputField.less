@@ -1,0 +1,19 @@
+@import (reference) "../../styles/variables.less";
+
+.input-filed__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .input__field {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .input__field,
+    .button {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: @control-width;
+    }
+}

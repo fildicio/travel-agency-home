@@ -1,0 +1,22 @@
+.link__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .link__item {
+        text-decoration: none;
+        color: white;
+    }
+
+    &--vertical {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &--horizontal {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
